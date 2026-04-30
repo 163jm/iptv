@@ -24,3 +24,4 @@ ENV TZ=Asia/Shanghai
 EXPOSE 5000
 
 ENTRYPOINT ["/app/iptv"]
+CMD ["--port", "5000", "--workers", "20", "--top", "5", "--min-speed", "1.5", "--interval", "6h"]
